@@ -11,7 +11,7 @@ export default function Box({ status, value, fill, keyboard }) {
 
   return (
     <div
-      className={`border-2 ${keyboard ? "w-7 h-9" : "w-20 h-20"}  text-center ${
+      className={`border-2 ${keyboard ? "w-7 h-9" : "w-16 h-16"}  text-center ${
         statusLookup[status]
       }`}
     >
