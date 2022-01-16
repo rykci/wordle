@@ -64,7 +64,7 @@ export default function Home() {
       <div className="text-4xl absolute top-8 right-10">{`🔥${streak}`}</div>
 
       <button className="absolute top-0 font-sans text-7xl ">
-        {words.length == 6 ? secret.toUpperCase() : "WORDLE"}
+        {gameOver ? secret.toUpperCase() : "WORDLE"}
       </button>
 
       <form onSubmit={(e) => handleSubmit(e)}>
